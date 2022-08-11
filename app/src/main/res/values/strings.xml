@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GoodFood(client)</string>
+    <string name="authorization">авторизация</string>
+    <string name="login">войти</string>
+    <string name="register">Регистрация</string>
+    <string name="name">Имя:</string>
+    <string name="gmail">Электронная почта:</string>
+    <string name="password">Пароль:</string>
+    <string name="welcome">Вас приветсвует</string>
+    <string name="instruction">Введите свои данные для авторизации: </string>
+    <string name="password1">Придумайте пароль:</string>
+    <string name="password2">Повторите пароль:</string>
+    <string name="GoodFood">"Good Food"</string>
+    <string name="instruction2">*Для входа в приложение нажмите на кнопку "Войти".</string>
+    <string name="instruction3">*Если вы впервые используете наше приложение, нажмите на кнопку "Регистрация".</string>
+    <string name="instruction4">*Для регистрации введите свои личные данные:</string>
+    <string name="configuration">*Для подтверждения электронной почты нажмите на кнопку "Подтвердить" </string>
+    <string name="configurationBtn">Подтвердить</string>
+    <string name="configurationGmail">*После смс-подтверждения вашей электроной почты , нажмите на кнопку "Автроризация" в левом верхнем углу.</string>
+    <string name="Home">Главная</string>
+    <string name="Profile">Профиль</string>
+    <string name="location">Локация</string>
+    <string name="Search">Поиск</string>
+    <string name="Change">Сменить аккаунт</string>
+    <string name="API_KEY">AIzaSyA4oCJQpq4dNS09qQLWh86qUMuQ9TzsJis</string>
+</resources>
