@@ -34,8 +34,8 @@ lateinit var binding: AuthorizationClientFragmentBinding
                 binding.gmailED.error = "Укажите свой логин"
                 binding.passwordED.error = "Укажите свой пароль"
             } else {
-                startActivity(Intent(requireActivity(), MainActivity::class.java))
-            }
+            startActivity(Intent(requireActivity(), MainActivity::class.java))}}
+
         }
-    }
-}
+        }
+

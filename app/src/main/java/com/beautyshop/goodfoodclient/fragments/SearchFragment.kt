@@ -1,17 +1,20 @@
 package com.beautyshop.goodfoodclient.fragments
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.beautyshop.goodfoodclient.R
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.beautyshop.goodfoodclient.adapters.RestaurantAdapter
 import com.beautyshop.goodfoodclient.databinding.SearchFragmentBinding
+import com.beautyshop.goodfoodclient.models.Constants
+import com.beautyshop.goodfoodclient.models.Restaurants
 
 class SearchFragment : Fragment() {
     private lateinit var _binding: SearchFragmentBinding
-    private val binding get() = _binding!!
+    private val binding get() = _binding
 
     companion object {
         fun newInstance() = SearchFragment()
@@ -30,12 +33,16 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
-        val list = arrayOf("12", "213", "fd", "fdsfs")
-        with(binding) {
-            searchButton.setOnClickListener {
-                list.filter { it == inputSearch.text.toString() }
+        val cafe = Constants.restaurants
+            with(binding) {
+                recyclerviewfragments.adapter = RestaurantAdapter(cafe, findNavController())
+
+                searchButton.setOnClickListener {
+                    val cafes = cafe.filter { binding.inputSearch.text.toString() == it.nameOfRestaurants }
+                    binding.recyclerviewfragments.adapter = RestaurantAdapter(cafes as ArrayList<Restaurants>, findNavController())
+
+                }
             }
-        }
     }
 
 }

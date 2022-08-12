@@ -19,10 +19,19 @@
         android:id="@+id/searchFragment"
         android:name="com.beautyshop.goodfoodclient.fragments.SearchFragment"
         android:label="search_fragment"
-        tools:layout="@layout/search_fragment" />
+        tools:layout="@layout/search_fragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_restaurantFullFragment"
+            app:destination="@id/restaurantFullFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.beautyshop.goodfoodclient.fragments.ProfileFragment"
         android:label="profile_fragment"
         tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/restaurantFullFragment"
+        android:name="com.beautyshop.goodfoodclient.fragments.RestaurantFullFragment"
+        android:label="fragment_restaurant_full"
+        tools:layout="@layout/fragment_restaurant_full" />
 </navigation>

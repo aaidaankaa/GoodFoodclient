@@ -1,11 +1,12 @@
 package com.beautyshop.goodfoodclient
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import com.beautyshop.goodfoodclient.databinding.ActivityLoginBinding
 import com.beautyshop.goodfoodclient.databinding.AuthorizationClientFragmentBinding
+import com.beautyshop.goodfoodclient.fragments.AuthorizationClientFragment
+import com.beautyshop.goodfoodclient.fragments.RegistrationFragment
 
 class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
@@ -20,7 +21,6 @@ class LoginActivity : AppCompatActivity() {
         }
         binding.authorization.setOnClickListener {
             findNavController(R.id.authorizationClientFragment)
-        }
 
-    }
-}
+    }}}
+

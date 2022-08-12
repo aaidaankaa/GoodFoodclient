@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RestaurantFullFragment">
+
+     <ImageView
+          android:id="@+id/imageRestaurant"
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+          android:layout_centerHorizontal="true"
+         android:layout_alignParentTop="true"
+          tools:src="@drawable/cafe"/>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/partySize"
+         android:layout_below="@id/imageRestaurant"
+         android:layout_width="match_parent"
+         android:layout_centerHorizontal="true"
+         android:layout_height="50dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/partySize"
+    android:id="@+id/linearTimer"
+    android:gravity="center"
+     android:orientation="horizontal">
+     <Spinner
+         android:id="@+id/spinnerData"
+         android:layout_width="wrap_content"
+         android:layout_marginEnd="100dp"
+         android:layout_height="wrap_content"/>
+     <Spinner
+         android:id="@+id/spinnerTime"
+         android:layout_width="wrap_content"
+         android:layout_marginStart="100dp"
+         android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+     <Button
+         android:id="@+id/btnToday"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="10dp"
+         android:textAllCaps="false"
+         android:text="Today"
+         android:background="@drawable/button"
+         android:textColor="@color/black"
+         android:backgroundTint="@color/white"
+         android:layout_below="@id/linearTimer"/>
+
+
+     <Button
+         android:id="@+id/btnTomorrow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+         android:textAllCaps="false"
+         android:layout_marginStart="10dp"
+         android:background="@drawable/button"
+         android:textColor="@color/black"
+         android:text="Tomorrow"
+         android:backgroundTint="#FFAB40"
+          android:layout_below="@id/btnToday"/>
+
+     <Button
+         android:id="@+id/editData"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:textAllCaps="false"
+         android:layout_marginStart="10dp"
+         android:text="Choose Date"
+         android:background="@drawable/button"
+         android:textColor="@color/black"
+         android:backgroundTint="@color/white"
+         android:drawableEnd="@drawable/ic_calendar"
+         android:layout_below="@id/btnTomorrow"/>
+
+
+     <Button
+         android:id="@+id/booking"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:layout_below="@+id/editData"
+          android:textColor="@color/black"
+          android:text="Забронировать"
+          android:background="@drawable/button"
+         android:layout_margin="20dp"
+          android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

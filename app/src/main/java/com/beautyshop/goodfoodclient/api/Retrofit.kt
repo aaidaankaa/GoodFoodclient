@@ -10,7 +10,7 @@ import retrofit2.Retrofit
 
 object Retrofit {
     fun retrofitModule(): Api {
-        val authToken = SharedPreferences(App.getContext()).token
+        val authToken = SharedPreferences(App.getContext())
         val logging = HttpLoggingInterceptor()
         logging.setLevel(HttpLoggingInterceptor.Level.BODY)
         val client = OkHttpClient.Builder()
