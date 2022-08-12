@@ -26,4 +26,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="telephone">Введите номер телефона</string>
+    <string name="inst"> Нажав на кнопку Локации, вы найдете адреса кафе, ресторанов, а также подберете маршрут к ним.</string>
+    <string name="quantity">Укажите количество людей:</string>
+    <string name="date">Укажите дату бронирования:</string>
+    <string name="time">Укажите время:</string>
+    <string name="order">Хотите сделать заказ заранее?</string>
+    <string name="orderET">Хотите сделать заказ заранее?</string>
+    <string name="food">Напишите какое блюдо и сколько порций. Например: Паста Феттучини 1порция, свежевыжатый сок 1 стакан.</string>
+    <string name="payment">Оплатите заказ картой</string>
 </resources>

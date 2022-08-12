@@ -5,55 +5,45 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment"
-    android:background="@drawable/backhome"
+    android:background="@drawable/backnew"
     android:orientation="vertical">
-    <com.google.android.material.textview.MaterialTextView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-
-        />
-
-
-
-    <com.google.android.material.button.MaterialButton
-
-        android:id="@+id/profile"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#BCAD73"
+        android:textSize="25dp"
         android:fontFamily="@font/appetite_italic"
-        android:text="@string/Profile"
-        android:textColor="#F6F2F2"
-        app:cornerRadius="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="460dp"/>
-
+        android:text="@string/inst"
+        android:textColor="@color/white"/>
     <com.google.android.material.button.MaterialButton
         android:id="@+id/location"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#C38D7C"
         android:fontFamily="@font/appetite_italic"
         android:text="@string/location"
         android:textColor="#F6F2F2"
         app:cornerRadius="20dp"
-        android:layout_gravity="center"/>
-
+        android:layout_gravity="center"
+        android:backgroundTint="#D1AE81"/>
 
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/search"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#B58D5A"
-            android:fontFamily="@font/appetite_italic"
-            android:text="@string/Search"
-            android:textColor="#F6F2F2"
-            app:cornerRadius="20dp"
-            android:layout_gravity="center"/>
+        android:id="@+id/search"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BC7964"
+        android:fontFamily="@font/appetite_italic"
+        android:text="@string/Search"
+        android:textColor="#F6F2F2"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center"
+        />
+
+
+
+
+
+
 
 
 </LinearLayout>

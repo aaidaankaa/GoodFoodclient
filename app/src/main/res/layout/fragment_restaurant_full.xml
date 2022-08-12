@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.RestaurantFullFragment">
+    tools:context=".fragments.RestaurantFullFragment"
+    android:orientation="vertical"
+>
 
      <ImageView
           android:id="@+id/imageRestaurant"
@@ -13,73 +15,78 @@
          android:layout_alignParentTop="true"
           tools:src="@drawable/cafe"/>
 
-     <androidx.recyclerview.widget.RecyclerView
-         android:id="@+id/partySize"
+     <com.google.android.material.textfield.TextInputLayout
+
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
          android:layout_width="match_parent"
-         android:layout_height="50dp"
-         android:layout_below="@id/imageRestaurant"
-         android:layout_centerHorizontal="true" />
+         android:layout_height="wrap_content"
+         android:hint="@string/quantity"
+         android:layout_marginTop="10dp"
+         android:textColorHint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/appetite_italic"
+              android:textColorHint="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_marginStart="32dp"
+              android:layout_marginEnd="32dp"
+              android:drawableStart="@drawable/group"
+              android:drawablePadding="12dp"
+            android:inputType="number"/>
+     </com.google.android.material.textfield.TextInputLayout>
+     <com.google.android.material.textfield.TextInputLayout
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/date"
+         android:layout_marginTop="10dp"
+         android:textColorHint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
 
-<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/appetite_italic"
+              android:textColorHint="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_marginStart="32dp"
+              android:layout_marginEnd="32dp"
+              android:drawableStart="@drawable/e"
+              android:drawablePadding="12dp"
+            android:inputType="date"
+            />
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+     <com.google.android.material.textfield.TextInputLayout
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/time"
+         android:layout_marginTop="10dp"
+         android:textColorHint="@color/black">
+
+          <com.google.android.material.textfield.TextInputEditText
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="32dp"
+              android:layout_marginEnd="32dp"
+              android:drawableStart="@drawable/t"
+              android:drawablePadding="12dp"
+              android:fontFamily="@font/appetite_italic"
+              android:inputType="datetime"
+              android:textColorHint="@color/black" />
+
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/partySize"
-    android:id="@+id/linearTimer"
-    android:gravity="center"
-     android:orientation="horizontal">
-     <Spinner
-         android:id="@+id/spinnerData"
-         android:layout_width="wrap_content"
-         android:layout_marginEnd="100dp"
-         android:layout_height="wrap_content"/>
-     <Spinner
-         android:id="@+id/spinnerTime"
-         android:layout_width="wrap_content"
-         android:layout_marginStart="100dp"
-         android:layout_height="wrap_content"/>
-</LinearLayout>
+    android:layout_height="match_parent">
 
 
-     <Button
-         android:id="@+id/btnToday"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@id/linearTimer"
-         android:layout_marginStart="10dp"
-         android:layout_marginTop="10dp"
-         android:background="@drawable/button"
-         android:backgroundTint="@color/white"
-         android:text="Today"
-         android:textAllCaps="false"
-         android:textColor="@color/black" />
-
-
-     <Button
-         android:id="@+id/btnTomorrow"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-          android:layout_marginTop="10dp"
-         android:textAllCaps="false"
-         android:layout_marginStart="10dp"
-         android:background="@drawable/button"
-         android:textColor="@color/black"
-         android:text="Tomorrow"
-         android:backgroundTint="#FFAB40"
-          android:layout_below="@id/btnToday"/>
-
-     <Button
-         android:id="@+id/editData"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_marginTop="10dp"
-         android:textAllCaps="false"
-         android:layout_marginStart="10dp"
-         android:text="Choose Date"
-         android:background="@drawable/button"
-         android:textColor="@color/black"
-         android:backgroundTint="@color/white"
-         android:drawableEnd="@drawable/ic_calendar"
-         android:layout_below="@id/btnTomorrow"/>
 
 
      <Button
@@ -92,5 +99,40 @@
           android:background="@drawable/button"
          android:layout_margin="20dp"
           android:layout_centerHorizontal="true"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:fontFamily="@font/appetite_italic"
+          android:textSize="20dp"
+          android:text="@string/order"
+          />
+     <EditText
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:hint="@string/food"/>
 
-</RelativeLayout>
+     <com.google.android.material.textfield.TextInputLayout
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/payment"
+         android:layout_marginTop="10dp"
+         android:textColorHint="@color/black">
+          <com.google.android.material.textfield.TextInputEditText
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/appetite_italic"
+              android:textColorHint="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_marginStart="32dp"
+              android:layout_marginEnd="32dp"
+              android:drawableStart="@drawable/pay"
+              android:drawablePadding="12dp"
+              android:inputType="number"
+              />
+
+     </com.google.android.material.textfield.TextInputLayout>
+</ScrollView>
+
+</LinearLayout>
