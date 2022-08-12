@@ -15,10 +15,10 @@
 
      <androidx.recyclerview.widget.RecyclerView
          android:id="@+id/partySize"
-         android:layout_below="@id/imageRestaurant"
          android:layout_width="match_parent"
-         android:layout_centerHorizontal="true"
-         android:layout_height="50dp"/>
+         android:layout_height="50dp"
+         android:layout_below="@id/imageRestaurant"
+         android:layout_centerHorizontal="true" />
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -44,14 +44,14 @@
          android:id="@+id/btnToday"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_marginTop="10dp"
+         android:layout_below="@id/linearTimer"
          android:layout_marginStart="10dp"
-         android:textAllCaps="false"
-         android:text="Today"
+         android:layout_marginTop="10dp"
          android:background="@drawable/button"
-         android:textColor="@color/black"
          android:backgroundTint="@color/white"
-         android:layout_below="@id/linearTimer"/>
+         android:text="Today"
+         android:textAllCaps="false"
+         android:textColor="@color/black" />
 
 
      <Button
