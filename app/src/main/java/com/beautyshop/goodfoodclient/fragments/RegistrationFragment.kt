@@ -6,7 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
+import androidx.navigation.fragment.findNavController
 import com.beautyshop.goodfoodclient.R
+import com.beautyshop.goodfoodclient.databinding.ActivityLoginBinding
 import com.beautyshop.goodfoodclient.databinding.RegistrationFragmentBinding
 import com.beautyshop.goodfoodclient.utilities.SharedPreferences
 
@@ -29,6 +32,14 @@ private lateinit var binding:RegistrationFragmentBinding
         super.onViewCreated(view, savedInstanceState)
         SharedPreferences(requireContext()).mail=binding.gmail.toString()
         SharedPreferences(requireContext()).name=binding.name.toString()
+
+
+
+
+        }
     }
 
-}
+
+
+
+

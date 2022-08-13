@@ -13,15 +13,15 @@ class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-      //  binding= ActivityLoginBinding.inflate(layoutInflater)
-     //   setContentView(binding.root)
-//        binding.register.setOnClickListener {
+ binding= ActivityLoginBinding.inflate(layoutInflater)
+   setContentView(binding.root)}}
+//       binding.register.setOnClickListener {
 //
-//               findNavController(R.id.registrationFragment)
-
-        }
+//               findNavController()?.navigate(R.id.registrationFragment)
+//
+//       }
 //        binding.authorization.setOnClickListener {
 //            findNavController(R.id.authorizationClientFragment)
-
-}
+//
+//}
 

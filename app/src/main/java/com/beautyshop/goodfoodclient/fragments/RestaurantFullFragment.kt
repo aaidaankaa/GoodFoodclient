@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import cn.pedant.SweetAlert.SweetAlertDialog
 import com.beautyshop.goodfoodclient.R
 import com.beautyshop.goodfoodclient.databinding.FragmentRestaurantFullBinding
-import com.beautyshop.goodfoodclient.databinding.ProfileFragmentBinding
+
 
 
 class RestaurantFullFragment : Fragment() {

@@ -9,41 +9,6 @@
     android:background="@drawable/back4">
 
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/buttons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/authorization"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/appetite_italic"
-            android:text="@string/authorization"
-            android:textColor="#F6F2F2"
-            app:cornerRadius="20dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/register"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
-            android:backgroundTint="#070707"
-            android:fontFamily="@font/appetite_italic"
-            android:text="@string/register"
-            android:textColor="#F6F2F2"
-            app:cornerRadius="20dp"
-          />
-    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <fragment
         android:id="@+id/loginFragment"
@@ -55,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttons"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.316"
         app:navGraph="@navigation/login_nav" />
 

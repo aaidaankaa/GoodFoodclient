@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.beautyshop.goodfoodclient.MainActivity
 import com.beautyshop.goodfoodclient.R
 import com.beautyshop.goodfoodclient.databinding.AuthorizationClientFragmentBinding
@@ -36,6 +37,5 @@ lateinit var binding: AuthorizationClientFragmentBinding
             } else {
             startActivity(Intent(requireActivity(), MainActivity::class.java))}}
 
-        }
-        }
+        }}
 
